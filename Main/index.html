@@ -1,27 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas de Cocina</title>
+    <title>Recipes For All</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Media/Aldenaire.png">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <a href="" class="logo">
-                    <img src="Media/Aldenaire.png" alt="">
-                </a>
-                <a href="#">Inicio</a>
-                <a href="#">Recetas</a>
-                <a href="#">Blog</a>
-                <a href="#">Contacto</a>
-            </ul>
+            <div class="container-nav">
+                <a href="index.html"><img src="Media/Aldenaire.png" alt=""></a>
+                <ul>
+                    <a href="#">Inicio</a>
+                    <a href="#">Recetas</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contacto</a>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="recipes">
+    <div class="container-body">
+        <div class="recipe-container">
             <div class="recipe" id="recipe1">
                 <h2>Receta 1</h2>
                 <p>Ingredientes: Pollo, Limón, Sal, Pimienta</p>
@@ -37,6 +39,21 @@
                 <p>Ingredientes: Arroz, Frijoles, Aguacate, Tomate, Cebolla</p>
                 <p>Instrucciones: Cocinar el arroz y los frijoles, luego servir con aguacate, tomate y cebolla picados.</p>
             </div>
+            <div class="recipe" id="recipe4">
+                <h2>Receta 4</h2>
+                <p>Ingredientes: Arroz, Frijoles, Aguacate, Tomate, Cebolla</p>
+                <p>Instrucciones: Cocinar el arroz y los frijoles, luego servir con aguacate, tomate y cebolla picados.</p>
+            </div>
+            <div class="recipe" id="recipe5">
+                <h2>Receta 5</h2>
+                <p>Ingredientes: Arroz, Frijoles, Aguacate, Tomate, Cebolla</p>
+                <p>Instrucciones: Cocinar el arroz y los frijoles, luego servir con aguacate, tomate y cebolla picados.</p>
+            </div>
+            <div class="recipe" id="recipe6">
+                <h2>Receta 6</h2>
+                <p>Ingredientes: Arroz, Frijoles, Aguacate, Tomate, Cebolla</p>
+                <p>Instrucciones: Cocinar el arroz y los frijoles, luego servir con aguacate, tomate y cebolla picados.</p>
+            </div>
         </div>
         <div class="recipe-details" id="recipe-details">
             <h2>Detalles de la Receta</h2>
@@ -44,6 +61,26 @@
             <p id="instructions"></p>
         </div>
     </div>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <p>Contacto: info@example.com</p>
+                <p>Teléfono: +1234567890</p>
+                <p>Dirección: 123 Calle Principal, Ciudad, País</p>
+                <p>Síguenos en: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

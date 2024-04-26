@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
 }
 
 header {
+    
     background-color: #EBB230;
     color: #fff;
     text-align: center;
@@ -12,15 +14,15 @@ header {
     justify-content: center;
 }
 
-.container {
-    max-width: 800px;
+.container-body {
     margin: 0 auto;
     padding: 20px;
 }
 
-.recipes {
-    display: flex;
-    justify-content: space-between;
+.recipe-container {
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .recipe {
@@ -45,19 +47,22 @@ header {
 }
 
 nav {
-    padding: 10px 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+    display: flex;;
+    gap: 200px;
+    margin-right: 50px;
+    
 }
 
 
 a {
+    margin-top: 15px;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -66,10 +71,63 @@ a {
 a:hover {
     color: #4D433A;
 }
-
-img{
-    margin-top: 5px;
-    width: 60px;
-    height: 55px;
+.container-nav img{
+    width: 100px;
+    height: auto;
     border-radius: 100%;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #4d433a; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno del footer */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Espacio entre los enlaces y la información de contacto */
+}
+
+.footer-links ul {
+    list-style: none; /* Quita los estilos de lista predeterminados */
+    padding: 0; /* Quita el espacio interior de la lista */
+}
+
+
+.footer-links ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón sobre ellos */
+}
+
+.contact-info {
+    margin-bottom: 20px; /* Espacio entre la información de contacto y el mensaje de derechos de autor */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Espaciado interno de los párrafos de la información de contacto */
+}
+
+.contact-info p a {
+    color: #fff; /* Color del texto de los enlaces de redes sociales */
+}
+
+.contact-info p a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón sobre ellos */
+}
+
+.copyright {
+    font-size: 14px; /* Tamaño del texto del mensaje de derechos de autor */
 }
