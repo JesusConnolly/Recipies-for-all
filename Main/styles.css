@@ -15,19 +15,20 @@ header {
 }
 
 .container-body {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .recipe-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+    flex-wrap: wrap;
 }
 
 .recipe {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
@@ -120,4 +121,10 @@ footer {
 
 .copyright {
     font-size: 14px; 
+}
+
+.Tittle{
+    text-align: center;
+    padding: 25px;
+    text-transform: capitalize;
 }

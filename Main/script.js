@@ -41,18 +41,18 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch(url, options)
         .then(response => response.json())
         .then(data => {
-            const firstTen = data.slice(0, 10);
+            const firstTen = data.slice(0, 12);
             const recipeContainer = document.getElementById("recipe-container");
 
             firstTen.forEach(item => {
-                const recipeElement = document.createElement("div");
+                var recipeElement = document.createElement("div");
                 recipeElement.classList.add("recipe");
                 recipeElement.innerHTML = `
                     <h2>${item.title}</h2>
                     <img src="${item.image}" alt="${item.title}">
                     <p>Dificultad: ${item.difficulty}</p>
                 `;
-                recipeContainer.appendChild(recipeElement);
+                recipeContainer.append(recipeElement);
             });
         })
         .catch(err => console.log(err));
