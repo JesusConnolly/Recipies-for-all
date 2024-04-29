@@ -13,6 +13,12 @@ header {
     padding: 20px 0;
     justify-content: center;
 }
+.Tittle{
+    text-align: center;
+    padding: 25px;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .container-body {
     max-width: 1000px;
@@ -23,21 +29,33 @@ header {
 .recipe-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 80px;
+    grid-gap: 50px;
     flex-wrap: wrap;
 }
 
 .recipe {
-    border: 2px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
+    position: static;
+    
+}
+
+.recipe h2 {
+    text-align: center;
+}
+
+.recipe p { 
+
+    text-align: center;
+    align-items: baseline;
 }
 
 .recipe img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    
 }
 
 
@@ -75,6 +93,7 @@ a:hover {
 
 
 footer {
+    margin-top: 40px;
     background-color: #4d433a; 
     color: #fff; 
     padding: 20px 0;
@@ -121,10 +140,4 @@ footer {
 
 .copyright {
     font-size: 14px; 
-}
-
-.Tittle{
-    text-align: center;
-    padding: 25px;
-    text-transform: capitalize;
 }
